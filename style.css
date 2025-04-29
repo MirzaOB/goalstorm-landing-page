@@ -1,0 +1,275 @@
+/* ===== Reset Defaults ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body & Global Styles ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Header/Navbar ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 20px 40px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* semi-transparent black */
+    color: white;
+    position: fixed;
+    /* keeps it at the top while scrolling */
+    width: 100%;
+    z-index: 1000;
+    /* stays above other elements */
+    backdrop-filter: blur(5px);
+    /* optional: adds a blur behind */
+    
+      
+}
+#main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: top 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+  }
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    background-image: url('images/stadium.jpg');
+    /* Your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-icon {
+    width: 60px;
+    /* Adjust the width of the icon */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+    /* Add space between the icon and the text */
+    vertical-align: middle;
+    /* Align the icon in the middle of the text */
+}
+
+
+.hero h1,
+.hero p,
+.hero .cta-button {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff4d4d;
+    padding: 12px 28px;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e63636;
+}
+
+/* ===== Features Section ===== */
+.features {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #1ae03b5a;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 40px;
+    color: #ff4d4d;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ===== Call to Action End ===== */
+.cta-end {
+    padding: 60px 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.cta-end h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+/* ===== Footer ===== */
+footer {
+    padding: 30px 20px;
+    background-color: #111;
+    color: #bbb;
+    text-align: center;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-icons a:hover {
+    color: #ff4d4d;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* space between image and text */
+}
+
+.logo-img {
+    width: 50px;
+    /* size of the logo */
+    height: 50px;
+    border-radius: 50%;
+    /* makes the image circular */
+    object-fit: cover;
+    /* keeps image looking clean inside circle */
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    /* adjust to your theme */
+}

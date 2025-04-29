@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoalStorm - Dominate the Pitch!</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+</head>
+<body>
+
+    <!-- Header/Navbar -->
+    <header id="main-header">
+        <div class="logo">
+            <img src="images/logo.png" alt="GoalStorm Logo" class="logo-img">
+            <span class="logo-text">GoalStorm</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1><img src="images/footballicon.png" alt="Football Icon" class="hero-icon"> Dominate the Pitch with GoalStorm!</h1>
+        <p>Build your ultimate team and conquer the world in thrilling football matches.</p>
+        <a href="#" class="cta-button">Download Now</a>
+    </section>
+    
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Game Features</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <img src="images/icon6.png" alt="Multiplayer">
+                <h3>Multiplayer Battles</h3>
+                <p>Challenge players worldwide in real-time matches.</p>
+            </div>
+            <div class="card">
+                <img src="images/icon7.png" alt="Team Builder">
+                <h3>Custom Team Builder</h3>
+                <p>Design and upgrade your dream team with top players.</p>
+            </div>
+            <div class="card">
+                <img src="images/icon8.png" alt="Live Tournaments">
+                <h3>Live Tournaments</h3>
+                <p>Participate in leagues and win exciting rewards weekly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta-end">
+        <h2>Ready to Score Big?</h2>
+        <a href="#" class="cta-button">Join the League Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2025 GoalStorm. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script>
+        let lastScrollTop = 0;
+        const header = document.getElementById("main-header");
+      
+        window.addEventListener("scroll", function () {
+          let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+          if (scrollTop > lastScrollTop) {
+            // Scrolling down
+            header.style.top = "-100px"; // hides the header
+          } else {
+            // Scrolling up
+            header.style.top = "0";
+          }
+      
+          lastScrollTop = scrollTop;
+        });
+      </script>
+      
+</body>
+</html>

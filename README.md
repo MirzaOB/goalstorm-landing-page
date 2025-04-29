@@ -46,7 +46,7 @@ GoalStorm/ ├── index.html ├── style.css ├── images/ │ ├─
 Feel free to connect:  
 📧 Email: *[mirzaowaisbaig59@gmail.com]*  
 
-Auther - Mirza Owais Baig
+Auther - Mirza Owais Baig, 2025.
 ---
 
 ## 📄 License
